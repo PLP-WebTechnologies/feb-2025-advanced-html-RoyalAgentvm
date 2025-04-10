@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Steps to Create a Website (Ordered List)</h2>
+        <ol type="I">
+            <li>Plan your website structure</li>
+            <li>Create HTML skeleton</li>
+            <li>Add CSS styling</li>
+            <li>Implement JavaScript functionality</li>
+            <li>Test and deploy</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Beautiful Nature Image</h2>
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+             alt="Scenic nature landscape with trees and river" 
+             width="800"
+             height="500">
+        <p>Image sourced from <a href="https://www.pexels.com/" target="_blank">Pexels.com</a></p>
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Smith</td>
+                    <td>123 Main St, Anytown</td>
+                    <td>555-0101</td>
+                    <td>john.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah Johnson</td>
+                    <td>456 Oak Ave, Somewhere</td>
+                    <td>555-0102</td>
+                    <td>sarah.j@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>789 Pine Rd, Nowhere</td>
+                    <td>555-0103</td>
+                    <td>michael.b@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>321 Elm Blvd, Anywhere</td>
+                    <td>555-0104</td>
+                    <td>emily.d@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Wilson</td>
+                    <td>654 Maple Ln, Everywhere</td>
+                    <td>555-0105</td>
+                    <td>david.w@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="/submit" method="post">
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" 
+                       placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" 
+                       placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" 
+                       placeholder="Create a password (min 8 characters)" 
+                       minlength="8" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Date of Birth*</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div class="form-group">
+                <label for="country">Country*</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class="inline-label">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="inline-label">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other" class="inline-label">Other</label>
+                </div>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <label>Interests (Select all that apply)</label>
+                <div>
+                    <input type="checkbox" id="technology" name="interests" value="technology">
+                    <label for="technology" class="inline-label">Technology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports" class="inline-label">Sports</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music" class="inline-label">Music</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="travel" name="interests" value="travel">
+                    <label for="travel" class="inline-label">Travel</label>
+                </div>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="inline-label">
+                    I agree to the <a href="#">Terms and Conditions</a>*
+                </label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Advanced HTML5 Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
